@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@drawable/gradient_background"
+    tools:context=".OrderActivity">
+
+        <ImageButton
+            android:id="@+id/btnBackToList"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_gravity="start"
+            android:background="@drawable/gradient_background"
+            android:contentDescription="Back to Food List"
+            android:padding="8dp"
+            app:srcCompat="@drawable/ic_arrow_back_black"
+            app:tint="#FF8DA1" />
+
+        <TextView
+            android:id="@+id/tvTitle"
+            android:layout_width="423dp"
+            android:layout_height="113dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="16dp"
+            android:background="#FF8DA1"
+            android:clipToPadding="false"
+            android:gravity="center"
+            android:padding="8dp"
+            android:text="Order Food"
+            android:textColor="@android:color/white"
+            android:textSize="34sp"
+            android:textStyle="bold" />
+
+        <!-- Food Name Section -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Food Name"
+            android:textSize="18sp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginStart="30dp"
+            android:textColor="#FF8DA1"/>
+
+        <EditText
+            android:id="@+id/etFoodName"
+            android:layout_width="330dp"
+            android:layout_height="wrap_content"
+            android:hint="Enter food name - Get From List"
+            android:padding="12dp"
+            android:layout_marginBottom="16dp"
+            android:background="@android:color/white"
+            android:textColor="@android:color/darker_gray"
+            android:layout_gravity="center_horizontal"/>
+
+        <!-- Number of Servings Section -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Number of Servings"
+            android:textSize="18sp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginStart="30dp"
+            android:textColor="#FF8DA1"/>
+
+        <EditText
+            android:id="@+id/etServings"
+            android:layout_width="330dp"
+            android:layout_height="wrap_content"
+            android:hint="Enter number of servings"
+            android:inputType="number"
+            android:padding="12dp"
+            android:layout_marginBottom="16dp"
+            android:background="@android:color/white"
+            android:textColor="@android:color/darker_gray"
+            android:layout_gravity="center_horizontal"/>
+
+        <!-- Ordering Name Section -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ordering Name"
+            android:textSize="18sp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginStart="30dp"
+            android:textColor="#FF8DA1"/>
+
+        <EditText
+            android:id="@+id/etName"
+            android:layout_width="330dp"
+            android:layout_height="wrap_content"
+            android:hint="Ordering name by"
+            android:padding="12dp"
+            android:layout_marginBottom="16dp"
+            android:background="@android:color/white"
+            android:textColor="@android:color/darker_gray"
+            android:layout_gravity="center_horizontal"/>
+
+        <!-- Additional Notes Section -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Additional Notes"
+            android:textSize="18sp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginStart="30dp"
+            android:textColor="#FF8DA1"/>
+
+        <EditText
+            android:id="@+id/etNotes"
+            android:layout_width="330dp"
+            android:layout_height="wrap_content"
+            android:hint="Enter any additional notes"
+            android:padding="12dp"
+            android:layout_marginBottom="16dp"
+            android:background="@android:color/white"
+            android:textColor="@android:color/darker_gray"
+            android:layout_gravity="center_horizontal"/>
+
+        <!-- Order Button -->
+        <Button
+            android:id="@+id/btnOrder"
+            android:layout_width="330dp"
+            android:layout_height="wrap_content"
+            android:text="Place Order"
+            android:textColor="@android:color/white"
+            android:padding="12dp"
+            android:backgroundTint="#FF8DA1"
+            android:layout_marginTop="16dp"
+            android:layout_gravity="center_horizontal"/>
+</LinearLayout>
